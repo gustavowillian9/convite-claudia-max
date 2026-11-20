@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#32190f">
+  <meta name="description" content="Claudia Cristina e Max Alexandre convidam você para celebrar seu casamento.">
+  <title>Claudia Cristina & Max Alexandre | Convite de Casamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="experience">
+
+    <!-- CENA 1: ENVELOPE FECHADO -->
+    <section class="screen screen-envelope is-active" id="envelopeScreen" aria-label="Envelope fechado">
+      <div class="intro">
+        <p class="eyebrow">Um convite especial</p>
+        <h1>Claudia Cristina <span>&amp;</span> Max Alexandre</h1>
+        <p class="intro-subtitle">Uma celebração de amor, fé e união</p>
+      </div>
+
+      <div class="photo-stage closed-stage" id="closedStage">
+        <img class="reference-image closed-image" src="assets/envelope-fechado.png" alt="Envelope marrom com fita dourada e selo C e M">
+        <div class="seal-halo" aria-hidden="true"></div>
+        <button class="seal-hotspot" id="openEnvelope" type="button" aria-label="Tocar no selo C e M para abrir o convite">
+          <span class="sr-only">Abrir convite</span>
+        </button>
+      </div>
+
+      <p class="tap-hint" id="tapHint">Toque no selo C &amp; M para abrir</p>
+      <p class="opening-message" id="openingMessage" aria-live="polite">Com carinho, uma surpresa espera por você...</p>
+    </section>
+
+    <!-- CENA 2: ENVELOPE ABERTO -->
+    <section class="screen reveal-screen" id="revealScreen" aria-label="Envelope aberto">
+      <div class="scene-heading">
+        <p class="eyebrow">Com a bênção de Deus</p>
+        <h2>Uma mensagem especial para você</h2>
+      </div>
+      <div class="photo-stage reveal-stage">
+        <img class="reference-image reveal-image" src="assets/envelope-aberto.jpg" alt="Envelope marrom aberto revelando o cartão creme">
+      </div>
+      <button class="primary-button" id="showInvitation" type="button">REVELAR CONVITE</button>
+    </section>
+
+    <!-- CENA 3: ARTE DO CONVITE -->
+    <section class="screen invitation-screen" id="invitationScreen" aria-label="Convite de casamento">
+      <div class="invitation-wrap">
+        <p class="eyebrow">O grande dia</p>
+        <div class="photo-stage invitation-stage">
+          <img class="reference-image invitation-image" src="assets/convite.jpg" alt="Convite de casamento de Claudia Cristina e Max Alexandre">
+        </div>
+        <p class="closing-line">Será uma alegria ter você conosco!</p>
+        <button class="text-button" id="replayInvitation" type="button">VER NOVAMENTE</button>
+      </div>
+    </section>
+
+    <footer class="site-footer">Feito com carinho para celebrar o amor.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
